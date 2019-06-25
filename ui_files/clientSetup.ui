@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>420</width>
+    <height>370</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>420</width>
+    <height>370</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>420</width>
+    <height>550</height>
+   </size>
+  </property>
+  <property name="sizeIncrement">
+   <size>
+    <width>420</width>
+    <height>370</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>E-Chat</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>../widgets/logo.png</normaloff>../widgets/logo.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#nicknameField,#portNoField,#hostnameField{background:#fff;border-radius: 30px;color:#666;}
+#BG_input,#BG_input_2,#BG_input_3{background:#fff;border: 1px solid #ddd;border-radius: 30px;}
+#Icon_BG{background:transparent}
+#connectButton,#close_btn{
+color: #fff;
+background-color: #34ace0;
+font-size: 15px;
+border-radius: 25px;
+-webkit-transition-duration: 0.4; /* Safari*/
+transition-duration: 0.4s;
+cursor: pointer;
+}
+#connectButton:hover,#close_btn:hover{
+background-color: #0984e3;
+border-radius:25px;
+font-size:15px;
+-webkit-transition-duration: 0.4; /* Safari*/
+transition-duration: 0.4s;
+cursor: pointer;
+color: black; 
+}</string>
+  </property>
+  <widget class="QPushButton" name="connectButton">
+   <property name="geometry">
+    <rect>
+     <x>210</x>
+     <y>290</y>
+     <width>171</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="text">
+    <string>Connect</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblNickname">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>60</y>
+     <width>125</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial</family>
+     <pointsize>14</pointsize>
+     <weight>50</weight>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>User Name</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblPortNo">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>129</y>
+     <width>125</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>14</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Port number</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="nicknameField">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>49</y>
+     <width>201</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="accessibleDescription">
+    <string/>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::LeftToRight</enum>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">text-align: left;</string>
+   </property>
+   <property name="locale">
+    <locale language="English" country="UnitedStates"/>
+   </property>
+   <property name="placeholderText">
+    <string>Enter User Name</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="portNoField">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>120</y>
+     <width>201</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">text-align: left;</string>
+   </property>
+   <property name="locale">
+    <locale language="English" country="UnitedStates"/>
+   </property>
+   <property name="inputMethodHints">
+    <set>Qt::ImhDigitsOnly</set>
+   </property>
+   <property name="placeholderText">
+    <string>               Enter Port</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="hostnameField">
+   <property name="geometry">
+    <rect>
+     <x>167</x>
+     <y>190</y>
+     <width>201</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">text-align: left;</string>
+   </property>
+   <property name="locale">
+    <locale language="English" country="UnitedStates"/>
+   </property>
+   <property name="inputMethodHints">
+    <set>Qt::ImhNone</set>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="placeholderText">
+    <string>                 Enter IP</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblHostname">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>202</y>
+     <width>125</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>14</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Hostname</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="close_btn">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>290</y>
+     <width>171</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="text">
+    <string>Exit</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="BG_input">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>45</y>
+     <width>241</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="BG_input_2">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>116</y>
+     <width>241</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="BG_input_3">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>186</y>
+     <width>241</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+  </widget>
+  <zorder>BG_input_3</zorder>
+  <zorder>BG_input_2</zorder>
+  <zorder>BG_input</zorder>
+  <zorder>lblHostname</zorder>
+  <zorder>connectButton</zorder>
+  <zorder>lblNickname</zorder>
+  <zorder>lblPortNo</zorder>
+  <zorder>nicknameField</zorder>
+  <zorder>portNoField</zorder>
+  <zorder>hostnameField</zorder>
+  <zorder>close_btn</zorder>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
